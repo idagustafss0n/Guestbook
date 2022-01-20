@@ -1,0 +1,47 @@
+body{
+  background-color: rgba(173, 173, 173, 0.637);
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }  
+#submit {
+    width: 50%;
+    background-color: rgb(13, 114, 21);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+  }  
+#validering1 {
+  color: red;
+}
+#validering2 {
+  color: red;
+}
+#validering3 {
+  color: red;
+}
+#output{
+  width: 45%;
+  background-color: rgba(233, 216, 216, 0.651);
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid black
+}
+
