@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/stil.css" rel="stylesheet" type="text/css">
+    <script src=javascript/skript.js></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <!--Del 1: Gästbok/forum --> 
+    <h1>Gästbok</h1>
+
+    <form name="form1" action="/" method="post" onsubmit="return validateForm()">
+
+        <label for="name">E-post:</label> <br>
+        <input type="text" class="obligatoriskt" name="text1" onblur="ValidateEmail(document.form1.text1)"
+        > <br>
+        <p id="validering1"></p>  
+
+        <label for="name">Namm:</label><br>
+        <input type="text" class="obligatoriskt" name="text2" onblur="ValidateName(document.form1.text2)"
+        > <br>
+        <p id="validering2"></p>
+        
+        <label>Skriv något:</label><br>
+        <textarea name="text3" class="obligatoriskt" onblur="ValidateText(document.form1.text3)"
+        ></textarea><br>
+        <p id="validering3"></p>
+
+        <input type="submit" id="submit" value="Submit">
+
+
+    </form>   
+
+    <p id="demo"></p>
+
+    <h1>Utskrift gästbok</h1>
+    <div id="output"></div>
+
+</body>
+</html>
